@@ -1,9 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{icis}[2014/03/01 ICIS Conference submission style]
+\ProvidesClass{icisdoc}[2014/03/01 ICIS Conference submission style]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
-\LoadClass[10pt,twoside]{article}
+\LoadClass[11pt,twoside]{article}
 
 % Must have the following two lines at the top of your document
 % %!TEX TS-program = xelatex
@@ -26,7 +26,7 @@
 \setlist{noitemsep}
 
 \defaultfontfeatures{Scale=MatchLowercase}
-\setmainfont[Ligatures={Common,TeX}]{Georgia}
+\setmainfont[Ligatures={Common,TeX}]{Times New Roman}
 % \setromanfont[Numbers=Uppercase]{Georgia}
 
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
