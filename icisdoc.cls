@@ -3,7 +3,7 @@
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
-\LoadClass[11pt,twoside]{article}
+\LoadClass[11pt,twoside,letterpaper]{article}
 
 % Must have the following two lines at the top of your document
 % %!TEX TS-program = xelatex
