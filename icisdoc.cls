@@ -20,6 +20,8 @@
 \RequirePackage[margin=1in]{geometry}
 % \RequirePackage[total={7in,9.25in},top=0.75in,paper=letterpaper]{geometry}
 \RequirePackage{fancyhdr}
+% Gotta have that double space
+\RequirePackage[doublespacing]{setspace}
 
 % Get rid of spacing inside lists
 \RequirePackage{enumitem}
@@ -29,6 +31,8 @@
 \setmainfont[Ligatures={Common,TeX}]{Times New Roman}
 % \setromanfont[Numbers=Uppercase]{Georgia}
 
+
+% Set up a few different font sizes for sections and such
 \renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
 \renewcommand{\Huge}{\fontsize{20pt}{24pt}\selectfont}
 \renewcommand{\LARGE}{\fontsize{13pt}{15pt}\selectfont}
@@ -49,7 +53,7 @@
 \renewcommand{\maketitle}{%
   \begin{center} %
     {\Huge\bfseries\@title\par}
-    % {\Large\itshape\@researchtype\par}
+    {\Large\itshape\@author\par}
   \end{center}
   \thispagestyle{plain}\@thanks
 }
@@ -85,15 +89,15 @@
 % Header and footer info
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[RO]{\textit{\@shorttitle}}
-\fancyfoot[RO]{\textit{Thirty Fifth International Conference on Information Systems, %
+\fancyhead[L]{\textit{\@shorttitle}}
+\fancyfoot[R]{\textit{ICIS Doctoral Consortium, %
               Auckland 2014}\hspace{5mm}\textbf{\thepage}}
 
 % No header on the first page. Only a footer
 \fancypagestyle{plain}{
     \fancyhf{}
-    \fancyfoot[R]{\textit{Thirty Fifth International Conference on Information Systems, %
-              Auckland 2014}\hspace{5mm}\textbf{\thepage}}
+    \fancyfoot[R]{\textit{ICIS Doctoral Consortium, %
+        Auckland 2014}\hspace{5mm}\textbf{\thepage}}
   }
 
 % Get rid of the horizontal rules
