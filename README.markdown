@@ -1,21 +1,18 @@
 # Description
 This is a LaTeX template meeting the submission requirements
-for the 2014 International Conference on Information Systems.
+for the 2014 ICIS Doctoral Consortium.
 
 ## Requirements
-* Document MUST be compiled with XeLaTeX in order to support the Georgia font
-family
-* You must have the Georgia font installed on the compiling computer
+* Document MUST be compiled with XeLaTeX because I'm not sure how else to change
+  the default font. Should be too much of a problem.
 
 ## Use
-Set `\documentclass{icis}` and put `icis.cls` and `misq.bst` in the directory with
+Set `\documentclass{icisdoc}` and put `icisdoc.cls` and `misq.bst` in the directory with
 your main LaTeX document. In order to fill the template, you need to set a few
-options in your TeX file. These are demonstrated in `testdoc.tex`.
+options in your TeX file. These are demonstrated in `testdocconsort.tex`.
 
 ```latex
-\researchtype{}   % Indicate whether this is Completed Research or Research in Progress
 \shorttitle{}     % Give this document a short title (8 words or fewer)
-\track{}          % Indicate which track this will go to.
 ```
 At the end of your document, put the following to place your references section
 and use the `misq.bst` file.
