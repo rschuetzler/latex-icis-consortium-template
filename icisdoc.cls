@@ -3,7 +3,7 @@
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax
-\LoadClass[11pt,twoside,letterpaper]{article}
+\LoadClass[11pt,letterpaper]{article}
 
 % Must have the following two lines at the top of your document
 % %!TEX TS-program = xelatex
@@ -36,29 +36,32 @@
 \renewcommand{\large}{\fontsize{11pt}{13pt}\selectfont}
 % \setlength{\textwidth}{7in}
 % \setlength{\textheight}{9.25in}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt}
+\setlength{\parindent}{15pt}
+\setlength{\parskip}{0pt}
 
 
 % These are variables set in the frontmatter of the document
 % Not exactly sure if I need this step, but it was in the example I found.
-\let\@researchtype\@empty
 \let\@shorttitle\@empty
-\let\@track\@empty
 
-\newcommand{\researchtype}[1]{\gdef\@researchtype{#1}}
 \newcommand{\shorttitle}[1]{\gdef\@shorttitle{#1}}
-\newcommand{\track}[1]{\gdef\@track{#1}}
 
 \renewcommand{\maketitle}{%
   \begin{center} %
     {\Huge\bfseries\@title\par}
-    {\Large\itshape\@researchtype\par}
+    % {\Large\itshape\@researchtype\par}
   \end{center}
   \thispagestyle{plain}\@thanks
 }
 
 % TODO: Figure out citation style. Of course, MISQ doesn't use APA. 
+
+\newcommand{\chapter}{%
+  \newpage
+  \@startsection
+    {section}{1}{0pt}{4pt}%
+    {4pt}{\bfseries\LARGE\centering}%
+}
 
 \renewcommand{\section}{%
   \@startsection
@@ -83,11 +86,8 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[RO]{\textit{\@shorttitle}}
-\fancyhead[LE]{\textit{\@track}}
 \fancyfoot[RO]{\textit{Thirty Fifth International Conference on Information Systems, %
               Auckland 2014}\hspace{5mm}\textbf{\thepage}}
-\fancyfoot[LE]{\textbf{\thepage}\hspace{5mm}\textit{Thirty Fifth International Conference on Information Systems, %
-              Auckland 2014}}
 
 % No header on the first page. Only a footer
 \fancypagestyle{plain}{
