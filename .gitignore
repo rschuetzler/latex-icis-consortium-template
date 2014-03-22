@@ -20,3 +20,6 @@ $RECYCLE.BIN/
 *.bbl
 *.blg
 testdoc.synctex.gz
+
+# Auto-generated files from AucTeX parsing
+auto/*
