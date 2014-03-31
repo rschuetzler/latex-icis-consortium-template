@@ -33,7 +33,7 @@
 
 
 % Set up a few different font sizes for sections and such
-\renewcommand{\normalsize}{\fontsize{10pt}{12pt}\selectfont}
+\renewcommand{\normalsize}{\fontsize{11pt}{12pt}\selectfont}
 \renewcommand{\Huge}{\fontsize{20pt}{24pt}\selectfont}
 \renewcommand{\LARGE}{\fontsize{13pt}{15pt}\selectfont}
 \renewcommand{\Large}{\fontsize{12pt}{14pt}\selectfont}
